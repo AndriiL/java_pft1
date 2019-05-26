@@ -1,12 +1,11 @@
 package ru.stqa.pft.addressbook.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-  FirefoxDriver wd;
+  static FirefoxDriver wd;
 
   private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
@@ -21,8 +20,6 @@ public class ApplicationManager {
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "secret");
   }
-
-
 
   public void stop() {
     wd.quit();
