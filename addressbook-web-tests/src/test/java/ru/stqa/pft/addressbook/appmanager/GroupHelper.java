@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.appmanager;
 
-import com.sun.javafx.binding.ExpressionHelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.model.GroupData;
@@ -17,6 +16,10 @@ public class GroupHelper extends HelperBase {
 
   public void submitGroupCreation() {
     click(By.name("submit"));
+  }
+
+  public void click(By locator) {
+    click(locator);
   }
 
   public void fillGroupForm(GroupData groupData) {
