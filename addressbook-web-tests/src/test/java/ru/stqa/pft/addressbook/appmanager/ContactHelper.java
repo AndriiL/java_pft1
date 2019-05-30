@@ -10,8 +10,6 @@ public class ContactHelper extends HelperBase {
     super(wd);
   }
 
-  public NavigationHelper navigationHelper;
-
   public void submitContactForm() {
     getClick();
   }
@@ -22,9 +20,5 @@ public class ContactHelper extends HelperBase {
     type(By.name("company"), contactData.getCompany());
     type(By.name("mobile"), contactData.getMobile_phone());
     type(By.name("email"), contactData.getEmail());
-  }
-
-  public void gotoAddNew() {
-    navigationHelper.gotoAddNew();
   }
 }

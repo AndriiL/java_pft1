@@ -32,5 +32,7 @@ public class HelperBase {
       return false;
     }
   }
-
+  public void gotoAddNew() {
+    click(By.linkText("add new"));
+  }
 }
