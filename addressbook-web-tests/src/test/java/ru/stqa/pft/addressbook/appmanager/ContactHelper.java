@@ -21,4 +21,12 @@ public class ContactHelper extends HelperBase {
     type(By.name("mobile"), contactData.getMobile_phone());
     type(By.name("email"), contactData.getEmail());
   }
+
+  public void initContactModification() {
+    click(By.xpath("//tr[2]//td[8]//a[1]//img[1]"));
+  }
+
+  public void submitContactModification() {
+    click(By.name("update"));
+  }
 }

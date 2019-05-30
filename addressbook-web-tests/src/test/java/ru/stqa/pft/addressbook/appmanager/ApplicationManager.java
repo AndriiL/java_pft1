@@ -33,8 +33,9 @@ public class ApplicationManager {
   public GroupHelper getGroupHelper() {
     return groupHelper;
   }
-
   public NavigationHelper getNavigationHelper() { return navigationHelper; }
+  public ContactHelper getContactHelper() { return contactHelper;
+  }
 
   private boolean isElementPresent(By by) {
     try {
@@ -52,10 +53,6 @@ public class ApplicationManager {
     } catch (NoAlertPresentException e) {
       return false;
     }
-  }
-
-  public ContactHelper getContactHelper() {
-    return contactHelper;
   }
 
 }
