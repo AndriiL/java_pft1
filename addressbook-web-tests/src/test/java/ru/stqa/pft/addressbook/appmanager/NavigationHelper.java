@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class NavigationHelper {
@@ -8,7 +9,7 @@ public class NavigationHelper {
 
   private MyHelperBase helperBase;
 
-  public NavigationHelper(FirefoxDriver wd) {
+  public NavigationHelper(WebDriver wd) {
     helperBase = new MyHelperBase(wd);
   }
 
@@ -25,7 +26,7 @@ public class NavigationHelper {
   }
 
   private class MyHelperBase extends HelperBase {
-    public MyHelperBase(FirefoxDriver wd) {
+    public MyHelperBase(WebDriver wd) {
       super(wd);
     }
   }
